@@ -16,14 +16,6 @@ module MySearch
       MySearch::ParseText.new(@input_text).extract_unknown_words
     end
 
-    def urls
-      urls = []
-      unknown_words.each() { |word|
-        urls << "https://www.googleapis.com/customsearch/v1?&q=#{word}hl=ja&num=3&key=AIzaSyBFK2YRJNdxPS-4r2UY0bQi9D2vI1eXxzM&cx=015777728550736801855:mbplinrwlco"
-      }
-      urls
-    end
-
     def search
       output = []
       urls.each { |url|
