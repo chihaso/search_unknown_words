@@ -3,9 +3,9 @@
 require "pry"
 require "minitest/autorun"
 require "json"
-require_relative "./lib/file_io"
-require_relative "./lib/search"
-require_relative "./lib/parse_text"
+require_relative "../lib/file_io"
+require_relative "../lib/search"
+require_relative "../lib/parse_text"
 
 class SearchUnknownWordsTest < Minitest::Test
   def setup

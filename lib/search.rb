@@ -19,7 +19,7 @@ module MySearch
     def urls
       urls = []
       unknown_words.each() { |word|
-        urls << "https://www.googleapis.com/customsearch/v1?&q=#{word}hl=ja&num=3&key=AIzaSyBFK2YRJNdxPS-4r2UY0bQi9D2vI1eXxzM&cx=015777728550736801855:mbplinrwlco"
+        urls << "https://www.googleapis.com/customsearch/v1?&q=#{word}&hl=ja&num=3&key=#{API_key}&cx=#{cx_key}"
       }
       urls
     end
